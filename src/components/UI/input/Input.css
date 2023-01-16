@@ -1,0 +1,15 @@
+input{
+    width: 650px;
+    padding: 10px 15px;
+    border: 2px solid  #fff;
+    margin: 5px 0;
+    margin-top: 0.9rem;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.518);
+    border-radius: 4px;
+}
+ label {
+    font-size: 18px;
+    color: black;
+   
+}

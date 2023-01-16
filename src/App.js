@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import PostForm from "./components/post-form/PostForm";
+import PostList from "./components/post-list/PostList";
+
+import "./App.css";
 
 function App() {
+  const [posts, setPosts] = useState([]);
+
+  posts.sort((a, b) => {
+    return b.body - a.body;
+  });
+
+  const addPostHandler = (newPost) => {
+    setPosts((posts) => [...posts, newPost]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PostForm onPost={addPostHandler} />
+      <PostList posts={posts} />
     </div>
   );
 }
