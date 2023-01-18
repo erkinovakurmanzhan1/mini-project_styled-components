@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './Button.css'
+import React  from 'react';
+import style from './Button.module.css'
 
 
 const Button = ({children,...props}) => {
 
 
     return (
-        <button  {...props} className='btn'>{children}</button>
+        <button {...props} className={style.btn}>{children}</button>
     );
 };
 

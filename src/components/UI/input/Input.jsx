@@ -1,11 +1,11 @@
 import React from "react";
-import "./Input.css";
+import style from "./Input.module.css";
 
 const Input = ({ labelname,...props }) => {
   return (
     <div>
-      <label >{labelname}</label>
-      <input type="text" className="input" {...props} />
+      <label className={style.label}>{labelname}</label>
+      <input className={style.input} type="text" {...props} />
       
     </div>
   );

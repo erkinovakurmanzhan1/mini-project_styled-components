@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./PostItem.css";
+import style from "./PostItem.module.css";
 
 const PostItem = ({ post, number }) => {
   return (
-    <li>
+    <li className={style.li}>
       {number + 1}. {post.title} ({post.body} years old)
     </li>
   );

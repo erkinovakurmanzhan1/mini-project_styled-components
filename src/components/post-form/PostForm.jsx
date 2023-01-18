@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../UI/button/Button";
 import Input from "../UI/input/Input";
 
-import "./PostForm.css";
+import  style from "./PostForm.module.css";
 
 const PostForm = (props) => {
   const [title, setTitle] = useState("");
@@ -31,7 +31,7 @@ const PostForm = (props) => {
   };
 
   return (
-    <div className="box">
+    <div className={style.box}>
       <Input
         
         onChange={titleHandler}

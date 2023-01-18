@@ -2,7 +2,7 @@ import { useState } from "react";
 import PostForm from "./components/post-form/PostForm";
 import PostList from "./components/post-list/PostList";
 
-import "./App.css";
+import style from  "./App.module.css";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={style.App}>
       <PostForm onPost={addPostHandler} />
       <PostList posts={posts} />
     </div>

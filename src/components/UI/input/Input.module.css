@@ -1,4 +1,4 @@
-input{
+.input{
     width: 650px;
     padding: 10px 15px;
     border: 2px solid  #fff;
@@ -8,7 +8,7 @@ input{
     border: 1px solid rgba(128, 128, 128, 0.518);
     border-radius: 4px;
 }
- label {
+ .label {
     font-size: 18px;
     color: black;
    
